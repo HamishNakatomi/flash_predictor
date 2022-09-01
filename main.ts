@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     last_time = press_time
     press_time = input.runningTime()
     delta = press_time - last_time
-    predicted_delta = delta  * update_rate + predicted_delta * (1 - update_rate)
+    predicted_delta = delta * update_rate + predicted_delta * (1 - update_rate)
 })
 function flash () {
     basic.showLeds(`
